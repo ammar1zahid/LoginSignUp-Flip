@@ -1,0 +1,294 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800,900')!important ;
+
+body {
+    font-family: 'Poppins', sans-serif!important ;
+    font-weight: 300!important ;
+    font-size: 15px!important ;
+    line-height: 1.7!important ;
+    color: #fff!important ;
+    background-color: #EA2C62!important ;
+    overflow-x: hidden
+}
+
+a {
+    cursor: pointer!important ;
+    transition: all 200ms linear
+}
+
+a:hover {
+    text-decoration: none
+}
+
+.link {
+    color: #fff
+}
+
+.link:hover {
+    color: #EA2C62
+}
+
+p {
+    font-weight: 500!important ;
+    font-size: 14px!important ;
+    line-height: 1.7
+}
+
+h4 {
+    font-weight: 600
+}
+
+h6 span {
+    padding: 0 20px!important ;
+    text-transform: uppercase!important ;
+    font-weight: 700
+}
+
+.section {
+    position: relative!important ;
+    width: 100%!important ;
+    display: block
+}
+
+.full-height {
+    min-height: 100vh
+}
+
+[type="checkbox"]:checked,
+[type="checkbox"]:not(:checked) {
+    position: absolute!important ;
+    left: -9999px
+}
+
+.checkbox:checked+label,
+.checkbox:not(:checked)+label {
+    position: relative!important ;
+    display: block!important ;
+    text-align: center!important ;
+    width: 60px!important ;
+    height: 16px!important ;
+    border-radius: 2px!important ;
+    padding: 0!important ;
+    margin: 10px auto!important ;
+    cursor: pointer!important ;
+    background-color: #ffffff
+}
+
+.checkbox:checked+label:before,
+.checkbox:not(:checked)+label:before {
+    position: absolute!important ;
+    display: block!important ;
+    width: 36px!important ;
+    height: 36px!important ;
+    border-radius: 10%!important ;
+    color: #EA2C62!important ;
+    background-color: #2a2b38!important ;
+    content:''!important ;
+    z-index: 20!important ;
+    font-size: 12px!important ;
+    top: -10px!important ;
+    left: -10px!important ;
+    line-height: 36px!important ;
+    text-align: center!important ;
+    font-size: 24px!important ;
+    transition: all 0.5s ease
+}
+
+.checkbox:checked+label:before {
+    transform: translateX(44px) rotate(-270deg)
+}
+
+.card-3d-wrap {
+    position: relative!important ;
+    width: 440px!important ;
+    max-width: 100%!important ;
+    height: 400px!important ;
+    -webkit-transform-style: preserve-3d!important ;
+    transform-style: preserve-3d!important ;
+    perspective: 800px!important ;
+    margin-top: 40px
+}
+
+.card-3d-wrapper {
+    width: 100%!important ;
+    height: 100%!important ;
+    position: absolute!important ;
+    top: 0!important ;
+    left: 0!important ;
+    -webkit-transform-style: preserve-3d!important ;
+    transform-style: preserve-3d!important ;
+    transition: all 600ms ease-out
+}
+
+.login-div {
+    width: 150px
+}
+
+.card-front,
+.card-back {
+    width: 100%!important ;
+    height: 100%!important ;
+    background-color: #2a2b38!important ;
+    position: absolute!important ;
+    border-radius: 0px!important ;
+    left: 0!important ;
+    top: 0!important ;
+    -webkit-transform-style: preserve-3d!important ;
+    transform-style: preserve-3d!important ;
+    backface-visibility: hidden
+}
+
+.card-back {
+    transform: rotateY(180deg)
+}
+
+.checkbox:checked~.card-3d-wrap .card-3d-wrapper {
+    transform: rotateY(180deg)
+}
+
+.center-wrap {
+    position: absolute!important ;
+    width: 100%!important ;
+    padding: 0 35px!important ;
+    top: 50%!important ;
+    left: 0!important ;
+    transform: translate3d(0, -50%, 35px) perspective(100px)!important ;
+    z-index: 20!important ;
+    display: block
+}
+
+.form-group {
+    position: relative!important ;
+    display: block!important ;
+    margin: 0!important ;
+    padding: 0
+}
+
+.form-style {
+    padding: 13px 20px!important ;
+    padding-left: 55px!important ;
+    height: 48px!important ;
+    width: 100%!important ;
+    font-weight: 500!important ;
+    border-radius: 4px!important ;
+    font-size: 14px!important ;
+    line-height: 22px!important ;
+    letter-spacing: 0.5px!important ;
+    outline: none!important ;
+    color: #c4c3ca!important ;
+    background-color: #1f2029!important ;
+    border: none!important ;
+    transition: all 200ms linear!important ;
+    box-shadow: 0 4px 8px 0 rgba(21, 21, 21, .2)
+}
+
+.form-style:focus,
+.form-style:active {
+    border: none!important ;
+    outline: none!important ;
+    box-shadow: 0 4px 8px 0 rgba(21, 21, 21, .2)
+}
+
+.input-icon {
+    position: absolute!important ;
+    top: 0!important ;
+    left: 18px!important ;
+    height: 48px!important ;
+    font-size: 24px!important ;
+    line-height: 48px!important ;
+    text-align: left!important ;
+    color: #EA2C62!important ;
+    transition: all 200ms linear
+}
+
+.form-group input:-ms-input-placeholder {
+    color: #c4c3ca!important ;
+    opacity: 0.7!important ;
+    transition: all 200ms linear
+}
+
+.form-group input::-moz-placeholder {
+    color: #c4c3ca!important ;
+    opacity: 0.7!important ;
+    transition: all 200ms linear
+}
+
+.form-group input:-moz-placeholder {
+    color: #c4c3ca!important ;
+    opacity: 0.7!important ;
+    transition: all 200ms linear
+}
+
+.form-group input::-webkit-input-placeholder {
+    color: #c4c3ca!important ;
+    opacity: 0.7!important ;
+    transition: all 200ms linear
+}
+
+.form-group input:focus:-ms-input-placeholder {
+    opacity: 0!important ;
+    transition: all 200ms linear
+}
+
+.form-group input:focus::-moz-placeholder {
+    opacity: 0!important ;
+    transition: all 200ms linear
+}
+
+.form-group input:focus:-moz-placeholder {
+    opacity: 0!important ;
+    transition: all 200ms linear
+}
+
+.form-group input:focus::-webkit-input-placeholder {
+    opacity: 0!important ;
+    transition: all 200ms linear
+}
+
+.btn {
+    border-radius: 4px!important ;
+    height: 48px!important ;
+    width: 100%!important ;
+    font-size: 13px!important ;
+    font-weight: 600!important ;
+    text-transform: uppercase!important ;
+    transition: all 200ms linear!important ;
+    padding: 0 30px!important ;
+    letter-spacing: 1px!important ;
+    display: inline-flex!important ;
+    align-items: center!important ;
+    justify-content: center!important ;
+    -ms-flex-pack: center!important ;
+    text-align: center!important ;
+    border: none!important ;
+    background-color: #EA2C62!important ;
+    color: #fff!important ;
+    box-shadow: 0 8px 24px 0 rgba(18, 248, 173, .2)
+}
+
+.btn:active,
+.btn:focus {
+    background-color: #fff!important ;
+    color: #EA2C62!important ;
+    box-shadow: 0 8px 24px 0 rgba(255, 255, 255, .2)
+}
+
+.btn:hover {
+    background-color: #fff!important ;
+    color: #EA2C62!important ;
+    box-shadow: 0 8px 24px 0 rgba(255, 255, 255, .2)
+}
+
+.logo {
+    position: absolute!important ;
+    top: 30px!important ;
+    right: 30px!important ;
+    display: block!important ;
+    z-index: 100!important ;
+    transition: all 250ms linear
+}
+
+.logo img {
+    height: 26px!important ;
+    width: auto!important ;
+    display: block
+}
